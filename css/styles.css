@@ -7,6 +7,7 @@
     --footer-bg: #2f303a;
     --address-color: rgba(255, 255, 255, 0.6);
     --header-bg: #ffffff;
+    --social-btn: #afb1b8;
 }
 
 /*-----------Утилиты---------*/
@@ -64,19 +65,6 @@ body {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.footer-section {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 60px;
-    padding-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-footer {
-    background-color: var(--footer-bg);
-}
 
 .section-title {
     color: var(--title-text-color);
@@ -108,6 +96,7 @@ footer {
 footer .logo {
     color: var(--accent-white-color);
     padding-bottom: 0;
+    padding-top: 0;
     margin-bottom: 20px;
 }
 
@@ -127,6 +116,34 @@ footer .logo {
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+}
+
+.header-button {
+    padding: 0;
+    border: none;
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.header-icon {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+    fill: var(--primary-text-color);
+}
+
+.header-icon.tel {
+    width: 10px;
+    height: 16px;
+}
+
+.header-icon:hover,
+.contact .link:hover .header-icon {
+    fill: var(--accent-color);
 }
 
 nav {
@@ -180,6 +197,7 @@ nav {
 .benefits .item + .item {
     margin-left: 50px;
 }
+
 .contact .link:hover,
 .contact .link:focus {
     color: var(--accent-color);
@@ -268,6 +286,7 @@ address .contact-item.list:last-child {
     line-height: 1.62;
     letter-spacing: 0.03em;
     padding: 6px 22px;
+    color: currentColor;
 }
 
 .filter {
@@ -292,6 +311,20 @@ address .contact-item.list:last-child {
     line-height: 1.14;
     text-transform: uppercase;
     margin-bottom: 10px;
+}
+.benefits-icon {
+    width: 70px;
+    height: 70px;
+}
+.button-icon {
+    padding: 0;
+    border: none;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: var(--button-bg);
+
+    margin-bottom: 30px;
 }
 
 /*--------Секция Чем мы занимаемся------*/
@@ -341,7 +374,41 @@ address .contact-item.list:last-child {
     margin-bottom: 10px;
 }
 .team-prof {
-    margin-bottom: 30px;
+    margin-bottom: 16px;
+}
+.social-buttons {
+    display: flex;
+    padding: 0 32px 30px 32px;
+    justify-content: space-between;
+}
+
+.social-icon {
+    padding: 0;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    fill: var(--social-btn);
+}
+.social-button {
+    cursor: pointer;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--accent-white-color);
+}
+
+.social-button:hover,
+.social-button:focus {
+    background-color: var(--accent-color);
+}
+
+.social-button:hover .social-icon,
+.social-button:focus .social-icon {
+    fill: var(--accent-white-color);
 }
 
 /**--------------Portfolio-------------------**/
@@ -350,7 +417,7 @@ address .contact-item.list:last-child {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
-    line-height: 2px;
+    line-height: 2;
     letter-spacing: 0.06em;
     margin-top: 20px;
     margin-bottom: 9px;
@@ -391,4 +458,68 @@ address .contact-item.list:last-child {
 }
 .portfolio-item:nth-child(-n + 3) {
     margin-top: 0;
+}
+
+/*----------------Footer-------------*/
+
+.footer-section {
+    display: flex;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    background-color: var(--footer-bg);
+}
+
+.footer-contacts {
+    margin-right: 70px;
+}
+.join-title {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--accent-white-color);
+
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+.join-social-buttons {
+    display: flex;
+    width: 206px;
+    justify-content: space-between;
+}
+
+.join-social-icon {
+    padding: 0;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    fill: var(--accent-white-color);
+}
+.join-social-button {
+    cursor: pointer;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.join-social-button:hover,
+.join-social-button:focus {
+    background-color: var(--accent-color);
+}
+
+.join-social-button:hover .join-social-icon,
+.join-social-button:focus .join-social-icon {
+    fill: var(--accent-white-color);
 }
