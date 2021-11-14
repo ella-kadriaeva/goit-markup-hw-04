@@ -451,7 +451,9 @@ address .contact-item.list:last-child {
     width: 370px;
     margin-right: 30px;
     margin-top: 30px;
-    border-bottom: 2px solid var(--button-bg);
+    border-bottom: 1px solid var(--button-bg);
+    border-right: 1px solid var(--button-bg);
+    border-left: 1px solid var(--button-bg);
 }
 .portfolio-item:nth-child(3n) {
     margin-right: 0;
@@ -522,4 +524,41 @@ footer {
 .join-social-button:hover .join-social-icon,
 .join-social-button:focus .join-social-icon {
     fill: var(--accent-white-color);
+}
+/*--------------------Clients------------*/
+.logo-clients {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.logo-icon {
+    padding: 0;
+    cursor: pointer;
+    width: 106px;
+    height: 60px;
+    fill: var(--social-btn);
+}
+.logo-client {
+    cursor: pointer;
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--social-btn);
+    border-radius: 4px;
+
+    background-color: var(--accent-white-color);
+}
+
+.logo-client:hover,
+.logo-client:focus {
+    background-color: var(--accent-white-color);
+    border: 1px solid var(--accent-color);
+}
+
+.logo-client:hover .logo-icon,
+.logo-client:focus .logo-icon {
+    fill: var(--accent-color);
 }
