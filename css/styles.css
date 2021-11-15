@@ -39,6 +39,11 @@ p {
     padding: 0;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 /*---------Общие-------------*/
 
 body {
@@ -452,6 +457,7 @@ address .contact-item.list:last-child {
     display: flex;
     flex-wrap: wrap;
 }
+
 .portfolio-item {
     width: 370px;
     margin-right: 30px;
@@ -468,6 +474,7 @@ address .contact-item.list:last-child {
 }
 
 .portfolio-item:hover {
+    cursor: pointer;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
