@@ -506,6 +506,10 @@ footer {
 .footer-contacts {
     margin-right: 70px;
 }
+
+.footer-join {
+    padding-top: 12px;
+}
 .join-title {
     font-weight: 700;
     line-height: 1.14;
