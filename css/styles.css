@@ -327,6 +327,9 @@ address .contact-item.list:last-child {
     height: 70px;
 }
 .button-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0;
     border: none;
     width: 270px;
@@ -462,9 +465,6 @@ address .contact-item.list:last-child {
     width: 370px;
     margin-right: 30px;
     margin-top: 30px;
-    border-bottom: 1px solid var(--button-bg);
-    border-right: 1px solid var(--button-bg);
-    border-left: 1px solid var(--button-bg);
 }
 .portfolio-item:nth-child(3n) {
     margin-right: 0;
@@ -473,7 +473,14 @@ address .contact-item.list:last-child {
     margin-top: 0;
 }
 
-.portfolio-item:hover {
+.card-link {
+    display: block;
+    border-bottom: 1px solid var(--button-bg);
+    border-right: 1px solid var(--button-bg);
+    border-left: 1px solid var(--button-bg);
+}
+
+.card-link:hover {
     cursor: pointer;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -505,7 +512,6 @@ footer {
     text-transform: uppercase;
     color: var(--accent-white-color);
 
-    margin-top: 12px;
     margin-bottom: 20px;
 }
 .join-social-buttons {
